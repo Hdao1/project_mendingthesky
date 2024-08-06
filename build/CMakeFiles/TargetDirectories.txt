@@ -1,6 +1,0 @@
-/home/hdao/Documents/mendthesky111/build/CMakeFiles/test.dir
-/home/hdao/Documents/mendthesky111/build/CMakeFiles/edit_cache.dir
-/home/hdao/Documents/mendthesky111/build/CMakeFiles/rebuild_cache.dir
-/home/hdao/Documents/mendthesky111/build/lib/CMakeFiles/MTSLAB.dir
-/home/hdao/Documents/mendthesky111/build/lib/CMakeFiles/edit_cache.dir
-/home/hdao/Documents/mendthesky111/build/lib/CMakeFiles/rebuild_cache.dir
