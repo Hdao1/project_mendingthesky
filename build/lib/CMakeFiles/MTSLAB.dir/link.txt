@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMTSLAB.a CMakeFiles/MTSLAB.dir/src/odom1.cpp.o
+/usr/bin/ranlib libMTSLAB.a

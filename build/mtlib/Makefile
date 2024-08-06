@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdao/Documents/mendthesky111/build/CMakeFiles /home/hdao/Documents/mendthesky111/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/hdao/Documents/mendthesky111/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hdao/Documents/mendthesky111/build/CMakeFiles /home/hdao/Documents/mendthesky111/build/mtlib//CMakeFiles/progress.marks
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtlib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hdao/Documents/mendthesky111/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,92 +103,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hdao/Documents/mendthesky111/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named test
+# Convenience name for target.
+mtlib/CMakeFiles/MT2MENDINGTEST.dir/rule:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtlib/CMakeFiles/MT2MENDINGTEST.dir/rule
+.PHONY : mtlib/CMakeFiles/MT2MENDINGTEST.dir/rule
 
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
-
-#=============================================================================
-# Target rules for targets named MTSLAB
-
-# Build rule for target.
-MTSLAB: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MTSLAB
-.PHONY : MTSLAB
+# Convenience name for target.
+MT2MENDINGTEST: mtlib/CMakeFiles/MT2MENDINGTEST.dir/rule
+.PHONY : MT2MENDINGTEST
 
 # fast build rule for target.
-MTSLAB/fast:
-	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/MTSLAB.dir/build.make lib/CMakeFiles/MTSLAB.dir/build
-.PHONY : MTSLAB/fast
+MT2MENDINGTEST/fast:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f mtlib/CMakeFiles/MT2MENDINGTEST.dir/build.make mtlib/CMakeFiles/MT2MENDINGTEST.dir/build
+.PHONY : MT2MENDINGTEST/fast
 
-src/a+b.o: src/a+b.cpp.o
-.PHONY : src/a+b.o
-
-# target to build an object file
-src/a+b.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/a+b.cpp.o
-.PHONY : src/a+b.cpp.o
-
-src/a+b.i: src/a+b.cpp.i
-.PHONY : src/a+b.i
-
-# target to preprocess a source file
-src/a+b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/a+b.cpp.i
-.PHONY : src/a+b.cpp.i
-
-src/a+b.s: src/a+b.cpp.s
-.PHONY : src/a+b.s
-
-# target to generate assembly for a file
-src/a+b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/a+b.cpp.s
-.PHONY : src/a+b.cpp.s
-
-test.o: test.cpp.o
-.PHONY : test.o
+src/odom1.o: src/odom1.cpp.o
+.PHONY : src/odom1.o
 
 # target to build an object file
-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
+src/odom1.cpp.o:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f mtlib/CMakeFiles/MT2MENDINGTEST.dir/build.make mtlib/CMakeFiles/MT2MENDINGTEST.dir/src/odom1.cpp.o
+.PHONY : src/odom1.cpp.o
 
-test.i: test.cpp.i
-.PHONY : test.i
+src/odom1.i: src/odom1.cpp.i
+.PHONY : src/odom1.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
+src/odom1.cpp.i:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f mtlib/CMakeFiles/MT2MENDINGTEST.dir/build.make mtlib/CMakeFiles/MT2MENDINGTEST.dir/src/odom1.cpp.i
+.PHONY : src/odom1.cpp.i
 
-test.s: test.cpp.s
-.PHONY : test.s
+src/odom1.s: src/odom1.cpp.s
+.PHONY : src/odom1.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
+src/odom1.cpp.s:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f mtlib/CMakeFiles/MT2MENDINGTEST.dir/build.make mtlib/CMakeFiles/MT2MENDINGTEST.dir/src/odom1.cpp.s
+.PHONY : src/odom1.cpp.s
+
+src/t.o: src/t.cpp.o
+.PHONY : src/t.o
+
+# target to build an object file
+src/t.cpp.o:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f mtlib/CMakeFiles/MT2MENDINGTEST.dir/build.make mtlib/CMakeFiles/MT2MENDINGTEST.dir/src/t.cpp.o
+.PHONY : src/t.cpp.o
+
+src/t.i: src/t.cpp.i
+.PHONY : src/t.i
+
+# target to preprocess a source file
+src/t.cpp.i:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f mtlib/CMakeFiles/MT2MENDINGTEST.dir/build.make mtlib/CMakeFiles/MT2MENDINGTEST.dir/src/t.cpp.i
+.PHONY : src/t.cpp.i
+
+src/t.s: src/t.cpp.s
+.PHONY : src/t.s
+
+# target to generate assembly for a file
+src/t.cpp.s:
+	cd /home/hdao/Documents/mendthesky111/build && $(MAKE) $(MAKESILENT) -f mtlib/CMakeFiles/MT2MENDINGTEST.dir/build.make mtlib/CMakeFiles/MT2MENDINGTEST.dir/src/t.cpp.s
+.PHONY : src/t.cpp.s
 
 # Help Target
 help:
@@ -198,14 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MTSLAB"
-	@echo "... test"
-	@echo "... src/a+b.o"
-	@echo "... src/a+b.i"
-	@echo "... src/a+b.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... MT2MENDINGTEST"
+	@echo "... src/odom1.o"
+	@echo "... src/odom1.i"
+	@echo "... src/odom1.s"
+	@echo "... src/t.o"
+	@echo "... src/t.i"
+	@echo "... src/t.s"
 .PHONY : help
 
 
@@ -217,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hdao/Documents/mendthesky111/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMT2MENDINGTEST.a CMakeFiles/MT2MENDINGTEST.dir/src/odom1.cpp.o CMakeFiles/MT2MENDINGTEST.dir/src/t.cpp.o
+/usr/bin/ranlib libMT2MENDINGTEST.a
